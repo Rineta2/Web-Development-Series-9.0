@@ -6,7 +6,7 @@
     --primary-c: #458ff6;
 
     --h1-fs: 3rem;
-    --h2-fs: 2rem;
+    --h2-fs: 2.3rem;
     --h3-fs: 1.7rem;
     --normal-fs: 1.2rem;
 }
@@ -151,6 +151,8 @@ header {
     }
 }
 
+/* Services */
+
 .services {
     position: relative;
     min-height: 100vh;
@@ -248,5 +250,97 @@ header {
         top: 55%;
         right: 10%;
         z-index: -1;
+    }
+}
+
+/* Leading Healthcare Providers */
+
+.leading {
+    position: relative;
+    min-height: 100vh;
+
+    .leading__container {
+        padding: 1rem 5%;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10rem;
+            align-items: center;
+            justify-content: center;
+
+            .box {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 5rem;
+                place-items: center;
+
+                .img {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3rem;
+
+                    h2 {
+                        font-size: var(--h2-fs);
+                        font-weight: 600;
+                        color: var(--secondary-c);
+                        max-width: 60%;
+                        line-height: 1.5;
+                        position: relative;
+
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            width: 20%;
+                            height: 2px;
+                            background-color: var(--secondary-c);
+                            bottom: -20%;
+                            left: 0;
+                            border-radius: 12px;
+                        }
+                    }
+
+                    p {
+                        font-size: var(--normal-fs);
+                        max-width: 70%;
+                        line-height: 1.5;
+                    }
+
+                    .primary {
+                        a {
+                            display: flex;
+                            align-items: center;
+                            gap: 0.5rem;
+
+                            i {
+                                font-size: var(--h3-fs);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .secondary {
+                .text {
+                    h2 {
+                        max-width: 50%;
+                    }
+                }
+            }
+        }
+
+        .element {
+            position: absolute;
+            top: 45%;
+            right: 0;
+        }
     }
 }
