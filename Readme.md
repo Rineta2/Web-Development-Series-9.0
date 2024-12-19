@@ -6,7 +6,7 @@
 [![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat&logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/)
 [![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-> 🌐 Live Demo: [Web Development Series 9.0](your-demo-link-here)
+> 🌐 Live Demo: [Web Development Series 9.0](https://web-development-series-9-0-by-rizki-ramadhan.vercel.app/)
 
 ## 📝 Deskripsi
 
