@@ -186,9 +186,14 @@ header {
                 .nav__link {
                     color: var(--text-c);
                     font-size: var(--normal-fs);
+                    transition: color 0.3s ease-in-out;
 
                     @media only screen and (max-width: 768px) {
                         font-size: 1.5rem;
+                    }
+
+                    &:hover {
+                        color: var(--secondary-c);
                     }
 
                     &.active {
@@ -279,17 +284,13 @@ header {
                 h1 {
                     font-size: var(--h1-fs);
                     color: var(--title-c);
-                    max-width: 80%;
+                    max-width: 90%;
                     line-height: 1.5;
                     font-weight: 800;
                     letter-spacing: 2px;
 
                     @media only screen and (max-width: 1366px) {
                         max-width: 90%;
-                    }
-
-                    @media only screen and (max-width: 768px) {
-                        max-width: 100%;
                     }
                 }
 
@@ -306,6 +307,12 @@ header {
                 .primary {
                     background-color: var(--primary-c);
                     color: var(--bg-c);
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        background-color: var(--secondary-c);
+                        color: var(--bg-c);
+                    }
                 }
             }
         }
@@ -370,6 +377,12 @@ header {
                 gap: 2rem;
                 justify-content: center;
                 box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease-in-out;
+                overflow: hidden;
+
+                &:hover {
+                    transform: scale(1.02);
+                }
 
                 @media only screen and (max-width: 992px) {
                     padding: 1rem;
@@ -413,6 +426,22 @@ header {
 
         .primary {
             margin: 0 auto;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            a {
+                color: var(--primary-c);
+                transition: all 0.3s ease-in-out;
+            }
+
+            &:hover {
+                background-color: var(--secondary-c);
+                border: 1px solid var(--secondary-c);
+
+                a {
+                    color: var(--bg-c);
+                }
+            }
         }
     }
 
@@ -503,6 +532,25 @@ header {
                         max-width: 100%;
                     }
                 }
+
+                .primary {
+                    transition: all 0.3s ease-in-out;
+                    cursor: pointer;
+
+                    a {
+                        color: var(--primary-c);
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    &:hover {
+                        background-color: var(--secondary-c);
+                        border: 1px solid var(--secondary-c);
+
+                        a {
+                            color: var(--bg-c);
+                        }
+                    }
+                }
             }
         }
     }
@@ -582,6 +630,34 @@ header {
 
                     @media only screen and (max-width: 480px) {
                         max-width: 100%;
+                    }
+                }
+
+                .primary {
+                    transition: all 0.3s ease-in-out;
+                    cursor: pointer;
+
+                    a {
+                        color: var(--primary-c);
+                        transition: all 0.3s ease-in-out;
+
+                        i {
+                            color: var(--primary-c);
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: var(--secondary-c);
+                        border: 1px solid var(--secondary-c);
+
+                        a {
+                            color: var(--bg-c);
+
+                            i {
+                                color: var(--bg-c);
+                            }
+                        }
                     }
                 }
             }
@@ -786,7 +862,7 @@ header {
             }
 
             .box {
-                height: 512px;
+                height: 100%;
                 box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
                 border-radius: 20px;
                 overflow: hidden;
@@ -835,10 +911,20 @@ header {
                     a {
                         display: flex;
                         align-items: center;
-                        gap: 0.5rem;
+                        gap: 0.3rem;
                         font-size: var(--normal-fs);
                         color: var(--primary-c);
                         margin-top: 1rem;
+                        cursor: pointer;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            color: var(--secondary-c);
+
+                            i {
+                                transform: translateX(5px);
+                            }
+                        }
                     }
                 }
             }
@@ -858,6 +944,22 @@ header {
 
         .primary {
             margin: 0 auto;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            a {
+                color: var(--primary-c);
+                transition: all 0.3s ease-in-out;
+            }
+
+            &:hover {
+                background-color: var(--secondary-c);
+                border: 1px solid var(--secondary-c);
+
+                a {
+                    color: var(--bg-c);
+                }
+            }
         }
     }
 
