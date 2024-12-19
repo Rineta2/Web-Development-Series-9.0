@@ -43,12 +43,12 @@ Anda dapat langsung membuka file index.html di browser favorit Anda untuk meliha
 Struktur Proyek
 
 .
-├── public          # File statis
+├── public          # Static files (File statis)
 ├── src
-│   ├── assets      # Komponen JavaScript
-│   ├── styling     # File CSS dan styling
-└── index.html      # File HTML
-└── README.md       # Dokumentasi proyek
+│   ├── assets     # Assets like images, icons, etc. (Gambar, ikon, dll)
+│   └── styling    # CSS files and styling (File CSS dan styling)
+├── index.html     # Main HTML file (File HTML utama)
+└── README.md      # Project documentation (Dokumentasi proyek)
 
 Kontribusi
 
