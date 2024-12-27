@@ -1,363 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Development Series 9.0</title>
-    <link rel="stylesheet" href="src/styling/style.css">
-    <link rel="shortcut icon" href="src/assets/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-</head>
+    <link rel="stylesheet" href="src/styling/style.css" />
+    <link
+      rel="shortcut icon"
+      href="src/assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="nav container">
-            <div class="profile">
-                <img src="src/assets/header/logo.png" alt="logo">
-            </div>
+      <nav class="nav container">
+        <div class="profile">
+          <img src="src/assets/header/logo.png" alt="logo" />
+        </div>
 
-            <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link active" href="#home">Home</a></li>
-                <li class="nav__item"><a class="nav__link" href="#find-a-doctor">Find a doctor</a></li>
-                <li class="nav__item"><a class="nav__link" href="#apps">Apps</a></li>
-                <li class="nav__item"><a class="nav__link" href="#testimonials">Testimonials</a></li>
-                <li class="nav__item"><a class="nav__link" href="#about-us">About us</a></li>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link active" href="#home">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#find-a-doctor">Find a doctor</a>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="#apps">Apps</a></li>
+          <li class="nav__item">
+            <a class="nav__link" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#about-us">About us</a>
+          </li>
 
-                <div class="close">
-                    <i class='bx bx-x'></i>
-                </div>
-            </ul>
+          <div class="close">
+            <i class="bx bx-x"></i>
+          </div>
+        </ul>
 
-            <div class="nav__actions">
-                <div class="hamburger">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </div>
-        </nav>
+        <div class="nav__actions">
+          <div class="hamburger">
+            <i class="bx bx-menu"></i>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <!-- Home -->
-        <section class="home" id="home">
-            <div class="home__container container">
-                <div class="content">
-                    <div class="text">
-                        <h1 class="home__title">Virtual healthcare for you</h1>
-                        <p class="home__description">Trafalgar provides progressive, and affordable healthcare,
-                            accessible on mobile and online for everyone</p>
-                        <div class="btn primary">Consult today</div>
-                    </div>
-
-                    <div class="img">
-                        <img src="src/assets/home/illustration.png" alt="illustration">
-                    </div>
-                </div>
-
-                <div class="element">
-                    <img src="src/assets/home/element.png" alt="element">
-                </div>
-            </div>
-        </section>
-
-        <!-- Services -->
-
-        <section class="services">
-            <div class="services__container container">
-                <div class="heading">
-                    <h2>Our Services</h2>
-                    <p>We provide to you the best choiches for you. Adjust it to your health needs and make sure your
-                        undergo treatment with our highly qualified doctors you can consult with us which type of
-                        service is suitable for your health</p>
-                </div>
-
-                <div class="content">
-                    <div class="box">
-                        <img src="src/assets/services/Frame.png" alt="">
-                        <h3>Search doctor</h3>
-                        <p>Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
-                    </div>
-
-                    <div class="box">
-                        <img src="src/assets/services/Frame (1).png" alt="">
-                        <h3>Online pharmacy</h3>
-                        <p>Buy your medicines with our mobile application with a simple delivery system</p>
-                    </div>
-
-                    <div class="box">
-                        <img src="src/assets/services/Frame (2).png" alt="">
-                        <h3>Consultation</h3>
-                        <p>Free consultation with our trusted doctors and get the best recomendations</p>
-                    </div>
-
-                    <div class="box">
-                        <img src="src/assets/services/Frame (3).png" alt="">
-                        <h3>Details info</h3>
-                        <p>Free consultation with our trusted doctors and get the best recomendations</p>
-                    </div>
-
-                    <div class="box">
-                        <img src="src/assets/services/Frame (4).png" alt="">
-                        <h3>Emergency care</h3>
-                        <p>You can get 24/7 urgent care for yourself or your children and your lovely family</p>
-                    </div>
-
-                    <div class="box">
-                        <img src="src/assets/services/Frame (5).png" alt="">
-                        <h3>Tracking</h3>
-                        <p>Track and save your medical history and health data</p>
-                    </div>
-                </div>
-
-                <div class="btn primary">
-                    <a href="#">Learn More</a>
-                </div>
+      <!-- Home -->
+      <section class="home" id="home">
+        <div class="home__container container">
+          <div class="content">
+            <div class="text">
+              <h1 class="home__title">Virtual healthcare for you</h1>
+              <p class="home__description">
+                Trafalgar provides progressive, and affordable healthcare,
+                accessible on mobile and online for everyone
+              </p>
+              <div class="btn primary">Consult today</div>
             </div>
 
-
-            <div class="element">
-                <img src="src/assets/services/bg element.png" alt="element">
+            <div class="img">
+              <img src="src/assets/home/illustration.png" alt="illustration" />
             </div>
+          </div>
 
-            <div class="right">
-                <img src="src/assets/services/element.png" alt="left">
-            </div>
-        </section>
+          <div class="element">
+            <img src="src/assets/home/element.png" alt="element" />
+          </div>
+        </div>
+      </section>
 
-        <!-- Leading Healthcare Providers -->
+      <!-- Services -->
 
-        <section class="leading" id="leading">
-            <div class="leading__container container">
-                <div class="box">
-                    <div class="img">
-                        <img src="src/assets/landing/trafalgar-illustration sec02 1.png" alt="element">
-                    </div>
+      <section class="services">
+        <div class="services__container container">
+          <div class="heading">
+            <h2>Our Services</h2>
+            <p>
+              We provide to you the best choiches for you. Adjust it to your
+              health needs and make sure your undergo treatment with our highly
+              qualified doctors you can consult with us which type of service is
+              suitable for your health
+            </p>
+          </div>
 
-                    <div class="text">
-                        <h2>Leading healthcare providers</h2>
-
-                        <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and
-                            online
-                            for everyone. To us, it’s not just work. We take pride in the solutions we deliver</p>
-
-                        <div class="btn primary">
-                            <a href="#">Learn More</a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="element">
-                    <img src="src/assets/apps/element.png" alt="">
-                </div>
-            </div>
-        </section>
-
-        <section class="apps" id="apps">
-            <div class="apps__container container">
-
-                <div class="box">
-                    <div class="text">
-                        <h2>Download our mobile apps</h2>
-
-                        <p>Our dedicated patient engagement app and
-                            web portal allow you to access information instantaneously (no tedeous form, long calls,
-                            or administrative hassle) and securely</p>
-
-                        <div class="btn primary">
-                            <a href="#">Download <i class='bx bx-down-arrow-alt'></i></a>
-                        </div>
-                    </div>
-
-                    <div class="img">
-                        <img src="src/assets/apps/trafalgar-illustration sec03 1.png" alt="element">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials -->
-
-        <section class="testimonials" id="testimonials">
-            <div class="testimonials__container container">
-                <div class="box">
-                    <h1>What our customer are saying</h1>
-
-                    <div class="profile">
-                        <div class="img">
-                            <img src="src/assets/testi/Mask Group.png" alt="">
-
-                            <div class="text">
-                                <h2>Edward Newgate</h2>
-                                <span>Founder Circle</span>
-                            </div>
-                        </div>
-
-                        <p>Our dedicated patient engagement app and
-                            web portal allow you to access information instantaneously (no tedeous form, long calls,
-                            or administrative hassle) and securely</p>
-                    </div>
-
-                    <div class="element">
-                        <img src="src/assets/testi/Group (1).png" alt="">
-                    </div>
-                </div>
-
-                <div class="element__2">
-                    <img src="src/assets/testi/Group.png" alt="">
-                </div>
-
-                <div class="pagination">
-                    <img src="src/assets/testi/arrow nav.png" alt="">
-                </div>
-            </div>
-        </section>
-
-        <!-- Article -->
-
-        <section class="article" id="article">
-            <div class="article__container container">
-                <div class="heading">
-                    <h2>Check out our latest article</h2>
-                </div>
-
-                <div class="content">
-                    <div class="box">
-                        <div class="img">
-                            <img src="src/assets/article/Mask Group.png" alt="article-1">
-                        </div>
-
-                        <div class="text">
-                            <h3>Disease detection, check
-                                up in the laboratory</h3>
-                            <p>In this case, the role of the health laboratory is very important to do
-                                a disease detection...</p>
-                            <a href="#">Read More <i class='bx bx-right-arrow-alt'></i></a>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="img">
-                            <img src="src/assets/article/Mask Group (1).png" alt="article-2">
-                        </div>
-
-                        <div class="text">
-                            <h3>Herbal medicines that are
-                                safe for consumption</h3>
-                            <p>Herbal medicine is very widely used at this time because of its very good for your
-                                health...</p>
-                            <a href="#">Read More <i class='bx bx-right-arrow-alt'></i></a>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="img">
-                            <img src="src/assets/article/Mask Group (2).png" alt="article-3">
-                        </div>
-
-                        <div class="text">
-                            <h3>Natural care for healthy
-                                facial skin</h3>
-                            <p>A healthy lifestyle should start from now and also for your skin health.
-                                There are some...</p>
-                            <a href="#">Read More <i class='bx bx-right-arrow-alt'></i></a>
-                        </div>
-                    </div>
-
-                    <div class="left">
-                        <img src="src/assets/article/element.png" alt="">
-                    </div>
-                </div>
-
-                <div class="btn primary">
-                    <a href="#">View all</a>
-                </div>
-            </div>
-
-            <div class="right">
-                <img src="src/assets/article/element (1).png" alt="">
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer__container container">
+          <div class="content">
             <div class="box">
-                <div class="img">
-                    <img src="src/assets/footer/trafalgar.png" alt="logo">
-                </div>
-
-                <ol>
-                    <div class="footer__list">
-                        <h3>Company</h3>
-
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li>
-                            <a href="#testimonials">Testimonials</a>
-                        </li>
-                        <li>
-                            <a href="#find-a-doctor">Find a doctor</a>
-                        </li>
-                        <li>
-                            <a href="#apps">Apps</a>
-                        </li>
-                    </div>
-
-                    <div class="footer__list">
-                        <h3>Region</h3>
-
-                        <li>
-                            <a href="#indonesia">Indonesia</a>
-                        </li>
-
-                        <li>
-                            <a href="#singapore">Singapore</a>
-                        </li>
-
-                        <li>
-                            <a href="#hongkong">Hongkong</a>
-                        </li>
-
-                        <li>
-                            <a href="#canada">Canada</a>
-                        </li>
-                    </div>
-
-                    <div class="footer__list">
-                        <h3>Help</h3>
-
-                        <li>
-                            <a href="#help">Help center</a>
-                        </li>
-
-                        <li>
-                            <a href="#contact">Contact support</a>
-                        </li>
-
-                        <li>
-                            <a href="#instructions">Instructions</a>
-                        </li>
-
-                        <li>
-                            <a href="#how-it-works">How it works</a>
-                        </li>
-                    </div>
-                </ol>
+              <img src="src/assets/services/Frame.png" alt="" />
+              <h3>Search doctor</h3>
+              <p>
+                Choose your doctor from thousands of specialist, general, and
+                trusted hospitals
+              </p>
             </div>
+
+            <div class="box">
+              <img src="src/assets/services/Frame (1).png" alt="" />
+              <h3>Online pharmacy</h3>
+              <p>
+                Buy your medicines with our mobile application with a simple
+                delivery system
+              </p>
+            </div>
+
+            <div class="box">
+              <img src="src/assets/services/Frame (2).png" alt="" />
+              <h3>Consultation</h3>
+              <p>
+                Free consultation with our trusted doctors and get the best
+                recomendations
+              </p>
+            </div>
+
+            <div class="box">
+              <img src="src/assets/services/Frame (3).png" alt="" />
+              <h3>Details info</h3>
+              <p>
+                Free consultation with our trusted doctors and get the best
+                recomendations
+              </p>
+            </div>
+
+            <div class="box">
+              <img src="src/assets/services/Frame (4).png" alt="" />
+              <h3>Emergency care</h3>
+              <p>
+                You can get 24/7 urgent care for yourself or your children and
+                your lovely family
+              </p>
+            </div>
+
+            <div class="box">
+              <img src="src/assets/services/Frame (5).png" alt="" />
+              <h3>Tracking</h3>
+              <p>Track and save your medical history and health data</p>
+            </div>
+          </div>
+
+          <div class="btn primary">
+            <a href="#">Learn More</a>
+          </div>
         </div>
 
-        <div class="left">
-            <img src="src/assets/footer/element.png" alt="">
+        <div class="element">
+          <img src="src/assets/services/bg element.png" alt="element" />
         </div>
 
         <div class="right">
-            <img src="src/assets/footer/element (1).png" alt="">
+          <img src="src/assets/services/element.png" alt="left" />
         </div>
+      </section>
+
+      <!-- Leading Healthcare Providers -->
+
+      <section class="leading" id="leading">
+        <div class="leading__container container">
+          <div class="box">
+            <div class="img">
+              <img
+                src="src/assets/landing/trafalgar-illustration sec02 1.png"
+                alt="element"
+              />
+            </div>
+
+            <div class="text">
+              <h2>Leading healthcare providers</h2>
+
+              <p>
+                Trafalgar provides progressive, and affordable healthcare,
+                accessible on mobile and online for everyone. To us, it’s not
+                just work. We take pride in the solutions we deliver
+              </p>
+
+              <div class="btn primary">
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="element">
+            <img src="src/assets/apps/element.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="apps" id="apps">
+        <div class="apps__container container">
+          <div class="box">
+            <div class="text">
+              <h2>Download our mobile apps</h2>
+
+              <p>
+                Our dedicated patient engagement app and web portal allow you to
+                access information instantaneously (no tedeous form, long calls,
+                or administrative hassle) and securely
+              </p>
+
+              <div class="btn primary">
+                <a href="#">Download <i class="bx bx-down-arrow-alt"></i></a>
+              </div>
+            </div>
+
+            <div class="img">
+              <img
+                src="src/assets/apps/trafalgar-illustration sec03 1.png"
+                alt="element"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+
+      <section class="testimonials" id="testimonials">
+        <div class="testimonials__container container">
+          <div class="box">
+            <h1>What our customer are saying</h1>
+
+            <div class="profile">
+              <div class="img">
+                <img src="src/assets/testi/Mask Group.png" alt="" />
+
+                <div class="text">
+                  <h2>Edward Newgate</h2>
+                  <span>Founder Circle</span>
+                </div>
+              </div>
+
+              <p>
+                Our dedicated patient engagement app and web portal allow you to
+                access information instantaneously (no tedeous form, long calls,
+                or administrative hassle) and securely
+              </p>
+            </div>
+
+            <div class="element">
+              <img src="src/assets/testi/Group (1).png" alt="" />
+            </div>
+          </div>
+
+          <div class="element__2">
+            <img src="src/assets/testi/Group.png" alt="" />
+          </div>
+
+          <div class="pagination">
+            <img src="src/assets/testi/arrow nav.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Article -->
+
+      <section class="article" id="article">
+        <div class="article__container container">
+          <div class="heading">
+            <h2>Check out our latest article</h2>
+          </div>
+
+          <div class="content">
+            <div class="box">
+              <div class="img">
+                <img src="src/assets/article/Mask Group.png" alt="article-1" />
+              </div>
+
+              <div class="text">
+                <h3>Disease detection, check up in the laboratory</h3>
+                <p>
+                  In this case, the role of the health laboratory is very
+                  important to do a disease detection...
+                </p>
+                <a href="#">Read More <i class="bx bx-right-arrow-alt"></i></a>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="img">
+                <img
+                  src="src/assets/article/Mask Group (1).png"
+                  alt="article-2"
+                />
+              </div>
+
+              <div class="text">
+                <h3>Herbal medicines that are safe for consumption</h3>
+                <p>
+                  Herbal medicine is very widely used at this time because of
+                  its very good for your health...
+                </p>
+                <a href="#">Read More <i class="bx bx-right-arrow-alt"></i></a>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="img">
+                <img
+                  src="src/assets/article/Mask Group (2).png"
+                  alt="article-3"
+                />
+              </div>
+
+              <div class="text">
+                <h3>Natural care for healthy facial skin</h3>
+                <p>
+                  A healthy lifestyle should start from now and also for your
+                  skin health. There are some...
+                </p>
+                <a href="#">Read More <i class="bx bx-right-arrow-alt"></i></a>
+              </div>
+            </div>
+
+            <div class="left">
+              <img src="src/assets/article/element.png" alt="" />
+            </div>
+          </div>
+
+          <div class="btn primary">
+            <a href="#">View all</a>
+          </div>
+        </div>
+
+        <div class="right">
+          <img src="src/assets/article/element (1).png" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__container container">
+        <div class="box">
+          <div class="img">
+            <img src="src/assets/footer/trafalgar.png" alt="logo" />
+          </div>
+
+          <ol>
+            <div class="footer__list">
+              <h3>Company</h3>
+
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#testimonials">Testimonials</a>
+              </li>
+              <li>
+                <a href="#find-a-doctor">Find a doctor</a>
+              </li>
+              <li>
+                <a href="#apps">Apps</a>
+              </li>
+            </div>
+
+            <div class="footer__list">
+              <h3>Region</h3>
+
+              <li>
+                <a href="#indonesia">Indonesia</a>
+              </li>
+
+              <li>
+                <a href="#singapore">Singapore</a>
+              </li>
+
+              <li>
+                <a href="#hongkong">Hongkong</a>
+              </li>
+
+              <li>
+                <a href="#canada">Canada</a>
+              </li>
+            </div>
+
+            <div class="footer__list">
+              <h3>Help</h3>
+
+              <li>
+                <a href="#help">Help center</a>
+              </li>
+
+              <li>
+                <a href="#contact">Contact support</a>
+              </li>
+
+              <li>
+                <a href="#instructions">Instructions</a>
+              </li>
+
+              <li>
+                <a href="#how-it-works">How it works</a>
+              </li>
+            </div>
+          </ol>
+        </div>
+      </div>
+
+      <div class="left">
+        <img src="src/assets/footer/element.png" alt="" />
+      </div>
+
+      <div class="right">
+        <img src="src/assets/footer/element (1).png" alt="" />
+      </div>
     </footer>
 
     <script src="src/js/main.js" defer></script>
-</body>
-
+  </body>
 </html>
