@@ -29,6 +29,10 @@ Web Development Series 9.0 adalah proyek pembelajaran yang dirancang untuk memba
 ### Deployment
 - Vercel
 
+### Animation
+- GSAP
+- ScrollReveal
+
 ## 🚀 Cara Menjalankan Proyek
 
 1. **Clone repository**
